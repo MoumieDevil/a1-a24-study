@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17324d">
+  <meta name="description" content="A1–A24数量关系学习教材：知识图解、分步例题、在线练习、错题本和考前速查。适合手机、平板与电脑。">
+  <title>A1–A24 · 数量关系学习站</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="sr-only skip-link" href="#main">跳到正文</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="学习目录">
+      <a class="sidebar-brand" href="#home"><span class="brand-mark">A</span><span>A1–A24<small>数量关系学习站</small></span></a>
+      <label class="sidebar-search">查找章节<input id="nav-search" type="search" placeholder="章节、题型或关键词" autocomplete="off"></label>
+      <nav id="chapter-nav" aria-label="章节目录"></nav>
+      <div class="sidebar-foot"><p>读条件 · 画关系 · 回代</p><a href="#settings">备份学习记录</a><span>2026课余精简版</span></div>
+    </aside>
+    <button class="scrim" id="scrim" aria-label="关闭目录" tabindex="-1" hidden></button>
+    <div class="main-shell">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menu-toggle" aria-label="打开目录" aria-expanded="false" aria-controls="sidebar">☰</button>
+        <div class="breadcrumbs" id="breadcrumbs">学习首页</div>
+        <div class="topbar-actions">
+          <button class="icon-button" id="font-minus" aria-label="减小字号">A−</button>
+          <span id="font-label" aria-live="polite">20px</span>
+          <button class="icon-button" id="font-plus" aria-label="增大字号">A＋</button>
+          <a class="icon-button" href="#search" aria-label="全文查找">⌕<span class="desktop-label"> 查找</span></a>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"><p class="notice">正在打开教材…</p></main>
+      <footer class="site-footer">A1–A24 数量关系 · 每章一例两练 · 学习记录保存在当前浏览器 <a href="#settings">导出 / 导入</a></footer>
+    </div>
+  </div>
+  <dialog id="diagram-dialog" aria-labelledby="diagram-dialog-title"><div class="button-row"><h2 id="diagram-dialog-title">教学图解</h2><button class="button secondary" id="close-diagram">关闭图解</button></div><div id="diagram-dialog-body"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="course-data.js"></script>
+  <script type="module" src="app.js"></script>
+  <noscript><p class="notice">请开启浏览器JavaScript以使用目录、练习与错题本。也可直接下载 <a href="full-course.pdf">完整PDF教材</a>。</p></noscript>
+</body>
+</html>
